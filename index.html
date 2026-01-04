@@ -1,222 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Devansh Patel | Full Stack Developer Portfolio" />
-  <meta name="theme-color" content="#050810" />
-  <title>Devansh Patel | Developer</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh Patel- Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Devansh<span>Patel</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
 
-<!-- ================= NAVBAR ================= -->
-<header>
-  <nav class="navbar">
-    <div class="nav-left">
-      <div class="logo"></div>
-      <h1>Devansh Patel</h1>
-    </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Devansh Patel</span></h1>
+                <p class="typed-text">Junior Software Developer</p>
+                <p class="hero-description">I craft beautiful and functional web experiences</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Devanshpatel07"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/devansh-patel-50ba3732a/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Mr_DevanshPatel"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <button class="hamburger" aria-label="Toggle Menu">☰</button>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="" alt="Profile">
+                </div>
+                <div class="about-text">
+                    <h3>I'm Junior Software  Developer</h3>
+                    <p>With over 1 years of experience in web development, I specialize in creating responsive and user-friendly applications. My passion lies in turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    <p>I work with modern technologies and frameworks to deliver high-quality solutions that meet client needs and exceed expectations.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="value">pateldevansh453@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Phone:</span>
+                            <span class="value">+91 930227680</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span class="value">Bhopal , Madhya Pradesh</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="nav-right">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-</header>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node"></i>
+                    <h3>Node.js</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 82%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<main>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    <div class="project-info">
+                        <h3>E-Commerce Website</h3>
+                        <p>A fully functional online store with payment integration</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task tracking application</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Social Media Dashboard</h3>
+                        <p>Analytics dashboard for social media metrics</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Chart.js</span>
+                            <span>API</span>
+                        </div>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ================= HERO ================= -->
-<section class="hero reveal">
-  <span class="badge">Aspiring Software Developer</span>
-  <h2>Building the <br><span>Future with Code</span></h2>
-  <p>
-    I craft innovative digital solutions using AI, blockchain,
-    and modern web technologies.
-  </p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>pateldevansh453@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 930227680</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Bhopal , Madhya Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero-buttons">
-    <a href="#projects" class="primary-btn">View My Work</a>
-    <a href="#contact" class="secondary-btn">Let’s Talk</a>
-  </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Devansh Patel. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/Devanshpatel07"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/devansh-patel-50ba3732a/https://www.linkedin.com/in/devansh-patel-50ba3732a/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Mr_DevanshPatel"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
-    <div class="socials">
-  <a href="https://github.com/" target="_blank" class="social github">
-    <span>🐙</span>
-    <small>GitHub</small>
-  </a>
-
-  <a href="https://linkedin.com/" target="_blank" class="social linkedin">
-    <span>💼</span>
-    <small>LinkedIn</small>
-  </a>
-
-  <a href="mailto:example@gmail.com" class="social email">
-    <span>✉️</span>
-    <small>Email</small>
-  </a>
-</div>
-
-
-<!-- ================= ABOUT ================= -->
-<section id="about" class="section reveal">
-  <h3>About Me</h3>
-  <p>
-    I am a Aspiring Software  developer focused on building scalable,
-    secure, and impactful digital products using modern technologies.
-  </p>
-</section>
-
-<!-- ================= SKILLS ================= -->
-
-<section id="skills" class="section dark reveal">
-  <h3>Technical Skills</h3>
-
-  <ul class="skills-grid">
-    <li class="skill-card">
-      <span class="icon">☕</span>
-      <p>Java</p>
-    </li>
-
-    <li class="skill-card">
-      <span class="icon">🐍</span>
-      <p>Python</p>
-    </li>
-
-    <li class="skill-card">
-      <span class="icon">📜</span>
-      <p>JavaScript</p>
-    </li>
-
-    <li class="skill-card">
-      <span class="icon">🌐</span>
-      <p>HTML</p>
-    </li>
-
-    <li class="skill-card">
-      <span class="icon">🎨</span>
-      <p>CSS</p>
-    </li>
-
-    <li class="skill-card">
-      <span class="icon">🔗</span>
-      <p>Solidity</p>
-    </li>
-  </ul>
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section reveal">
-  <h3>Featured Projects</h3>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <article class="project-card">
-      <div class="project-icon">🗳️</div>
-      <h4>Electronic Voting System</h4>
-      <p>
-        Blockchain-based secure voting system ensuring transparency,
-        immutability, and data integrity.
-      </p>
-      <div class="project-tags">
-        <span>Blockchain</span>
-        <span>Solidity</span>
-        <span>Web3</span>
-      </div>
-      <div class="project-actions">
-        <a href="#" class="project-btn">Live</a>
-        <a href="#" class="project-btn outline">Code</a>
-      </div>
-    </article>
-
-    <!-- Project 2 -->
-    <article class="project-card">
-      <div class="project-icon">🚗</div>
-      <h4>Ride Share App</h4>
-      <p>
-        Real-time ride sharing platform with intelligent matching,
-        live maps, and secure payments.
-      </p>
-      <div class="project-tags">
-        <span>React</span>
-        <span>Node.js</span>
-        <span>Maps API</span>
-      </div>
-      <div class="project-actions">
-        <a href="#" class="project-btn">Live</a>
-        <a href="#" class="project-btn outline">Code</a>
-      </div>
-    </article>
-
-    <!-- Project 3 -->
-    <article class="project-card highlight">
-      <div class="project-icon">🤖</div>
-      <h4>Live AI Chatbot</h4>
-      <p>
-        AI-powered chatbot capable of answering real-time questions
-        using NLP and intelligent response generation.
-      </p>
-      <div class="project-tags">
-        <span>AI</span>
-        <span>NLP</span>
-        <span>JavaScript</span>
-      </div>
-      <div class="project-actions">
-        <a href="#" class="project-btn">Live</a>
-        <a href="#" class="project-btn outline">Code</a>
-      </div>
-    </article>
-
-    <!-- Project 4 -->
-    <article class="project-card">
-      <div class="project-icon">🌐</div>
-      <h4>Portfolio Website</h4>
-      <p>
-        Personal portfolio website built with clean UI,
-        animations, and responsive design.
-      </p>
-      <div class="project-tags">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-      </div>
-      <div class="project-actions">
-        <a href="#" class="project-btn">Live</a>
-        <a href="#" class="project-btn outline">Code</a>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-
-<!-- ================= RESUME ================= -->
-<section class="section reveal">
-  <h3>Resume</h3>
-  <p>Download my resume to know more about my skills and experience.</p>
-  <a href="resume.pdf" download class="primary-btn">Download Resume</a>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section dark reveal">
-  <h3>Let’s Collaborate</h3>
-  <p>Have an idea or opportunity? Let’s build something together.</p>
-  <a href="mailto:example@gmail.com" class="primary-btn">Send Email</a>
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-  © 2025 Devansh Patel. All rights reserved.
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
