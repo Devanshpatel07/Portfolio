@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      /**
+       * Polyfill Shield for Sandboxed Environments
+       * Fixes: "Uncaught TypeError: Cannot set property fetch of #<Window> which has only a getter"
+       */
+      (function(w) {
+        var props = ['fetch', 'Headers', 'Request', 'Response'];
+        props.forEach(function(p) {
+          try {
+            var original = w[p];
+            if (!original) return;
+            var current = original;
+            Object.defineProperty(w, p, {
+              get: function() { return current; },
+              set: function(v) { current = v; },
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e) {
+            // If the above fails, at least attempt Strategy 2 (Value assignment)
+            try {
+              Object.defineProperty(w, p, {
+                value: w[p],
+                writable: true,
+                configurable: true,
+                enumerable: true
+              });
+            } catch (e2) {}
+          }
+        });
+        w.global = w;
+      })(typeof self !== 'undefined' ? self : window);
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AgriFi - Harvest Credit</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

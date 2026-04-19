@@ -1,0 +1,6 @@
+{
+  "name": "AgriFi",
+  "description": "A Solana-based crop-collateralized lending platform empowering farmers with AI-driven yield predictions and instant liquidity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

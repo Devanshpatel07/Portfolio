@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@100;400;900&family=Inter:wght@100;900&display=swap');
+@import "@solana/wallet-adapter-react-ui/styles.css";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Archivo Black", sans-serif;
+  --font-body: "Outfit", sans-serif;
+
+  --color-deep-green: #141414;
+  --color-harvest-gold: #D4FF00;
+  --color-soil-brown: #3D2B1F;
+  --color-earth-cream: #FDF9F0;
+  --color-soft-white: #FFFFFF;
+
+  --color-primary: var(--color-deep-green);
+  --color-secondary: var(--color-harvest-gold);
+  --color-accent: var(--color-soil-brown);
+  --color-background: var(--color-deep-green);
+  --color-foreground: var(--color-soft-white);
+
+  --radius-none: 0;
+  
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display tracking-[-0.06em] uppercase;
+  }
+}
+
+@layer utilities {
+  .stroke-text {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+  }
+}
+
+/* Custom Wallet Button styling to match Neo-Brutalist theme */
+.wallet-adapter-button {
+  background-color: var(--color-harvest-gold) !important;
+  color: black !important;
+  border-radius: 0 !important;
+  font-family: var(--font-display) !important;
+  font-weight: 900 !important;
+  height: 60px !important;
+  padding: 0 32px !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  border: 4px solid black !important;
+  box-shadow: 8px 8px 0px black !important;
+  transition: all 0.1s ease !important;
+}
+
+.wallet-adapter-button:hover {
+  transform: translate(2px, 2px) !important;
+  box-shadow: 4px 4px 0px black !important;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: var(--color-harvest-gold) !important;
+}
